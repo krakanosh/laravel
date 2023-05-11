@@ -9,18 +9,31 @@
     text-decoration: none;
     color: #000;
 }
+.product-item-container {
+    display: flex;
+    margin-top: 20px;
+}
+.product-item-wrap {
+    display: flex;
+    flex-flow: column;
+    grid-gap: 20px;
+}
 .product-item {
     width: 100%;
     max-width: 1440px;
     position: relative;
-    padding: 10px;
+    padding: 10px 20px;
     margin: 0 auto;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 4px #00000008, 0 12px 40px #00000008;
+    border-radius: 15px;
 }
 .product-item .title-wrap {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .title-wrap div {
     width: calc(100% - 350px);
