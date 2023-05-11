@@ -1,0 +1,34 @@
+.swiper {
+    width: 1200px;
+    height: 300px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: fit-content;
+    height: 300px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style-type: none
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+
+.page-title {
+    text-align: center;
+}

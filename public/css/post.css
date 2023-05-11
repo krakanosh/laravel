@@ -1,0 +1,34 @@
+.back-to-posts {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    background: #9acd32;
+    text-decoration: none;
+    color: #000;
+}
+.post-item .btn-wrap {
+    display: flex;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.post-item .edit-post,
+.post-item .delete-post {
+    width: 160px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cdc332;
+    color: #000;
+    text-decoration: none;
+}
+.post-item .delete-post {
+    outline: none;
+    background: #ff6347;
+}
