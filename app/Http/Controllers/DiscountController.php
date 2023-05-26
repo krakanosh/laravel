@@ -10,30 +10,7 @@ class DiscountController extends Controller
     public function index() {
         Product::all();
         $products = Product::where('discount', 1)->get();
-        foreach ($products as $product) {
-            ?>
-            <div class="product-item">
-                <div class="title-wrap">
-                    <div>
-                    <?php
-                    echo '<h2>' . $product->name . '</h2>';
-                    echo '<p>' . $product->description . '</p>';
-                    ?>
-                    </div>
-                    <?php
-                    echo '<img src="' . $product->image . '" alt="">';
-                    ?>
-                </div>
-                <?php
-                echo '<span>Категория: ' . $product->category_id . '</span>';
-                echo '<span>Цена: ' .$product->price . '</span>';
-                if ($product->discount === 1) {
-                    echo '<span>Цена по акции: ' . $product->discount_price . '</span>';
-                }
-                ?>
-            </div>
-            <?php
-        }
+        return view('discount.index', compact('products'));
     }
 }
 ?>

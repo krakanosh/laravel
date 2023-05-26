@@ -45,7 +45,7 @@ Route::delete('/products/{product}', 'ProductController@destroy')->name('product
 // Route::get('/products/create', 'ProductController@firstOrCreate');
 
 
-Route::get('/discount', 'DiscountController@index');
+Route::get('/discount', 'DiscountController@index')->name('discount.index');
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -53,3 +53,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/services', 'ServiceController@index')->name('service.index');
+Route::get('/services/create', 'ServiceController@create')->name('service.create');
+Route::post('/services', 'ServiceController@store')->name('service.store');
+Route::get('/services/{service}', 'ServiceController@show')->name('services.show');
+Route::get('/services/{service}/edit', 'ServiceController@edit')->name('services.edit');
+Route::patch('/services/{service}', 'ServiceController@update')->name('services.update');
+Route::delete('/services/{service}', 'ServiceController@destroy')->name('services.destroy');

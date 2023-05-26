@@ -46,13 +46,16 @@
                     <li><a href="/discount">Скидки</a></li>
                     <li><a href="{{ route('contact.index') }}">Контакты</a></li>
                     <li><a href="{{ route('about.index') }}">О нас</a></li>
-                    <li><a href="{{ route('post.index') }}">Посты</a></li>
+                    <li><a href="{{ route('post.index') }}">Блог</a></li>
+                    <li><a href="{{ route('service.index') }}">Услуги</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     @yield('content')
     @yield('products')
+    @yield('discounts')
+    @yield('service')
 </body>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
